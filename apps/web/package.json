@@ -23,6 +23,7 @@
     ]
   },
   "dependencies": {
+    "@monorepofe/components": "workspace:*",
     "@rematch/core": "2.2.0",
     "ahooks": "3.8.4",
     "antd": "5.24.2",

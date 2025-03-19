@@ -1,0 +1,22 @@
+.message {
+  :global {
+    .rock-message-notice {
+      .rock-message-content-wrap {
+        min-height: 40px;
+        padding: 7px 16px;
+        border-radius: 8px;
+        background-color: var(--admintoastBg);
+        color: var(--absWhite);
+        font-size: 14px;
+        border: none;
+        box-shadow: var(--ComBoxShadow);
+      }
+    }
+    .rock-icon.rock-message-icon {
+      display: none !important;
+    }
+    .rock-message-notice[data-title='true'] .rock-message-content-title {
+      color: var(--absWhite);
+    }
+  }
+}

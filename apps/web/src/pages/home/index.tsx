@@ -1,14 +1,15 @@
+import { Message } from '@monorepofe/components';
 import { Button } from 'antd';
-import { useSelector } from 'react-redux';
+import React from 'react';
 
-import { Tooltip } from '@/components/basic';
-import { RootState } from '@/models/store';
-import I18N from '@/utils/I18N';
-
-import s from './index.less';
-
-const HomePage: React.FC = () => {
-  const userInfo = useSelector((state: RootState) => state.user.userInfo);
-  return <div>web</div>;
+export default () => {
+  const test = () => {
+    Message.success('测试');
+  };
+  return (
+    <div>
+      <div>web</div>
+      <Button onClick={test}>测试</Button>
+    </div>
+  );
 };
-export default HomePage;
